@@ -6,13 +6,19 @@
       </div>
       <h1>Welcome to the Amplify Framework</h1>
     </div>
-    <div id="nav">
-      <router-link to="/text">Text</router-link> |
+    <div class="navigation">
+      <router-link to="/text">Text</router-link>&nbsp;|&nbsp;
       <router-link to="/images">Images</router-link>
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'app', 
+}
+</script>
 
 <style>
 #app {
@@ -212,15 +218,6 @@ select
   box-shadow: none !important;
 }
 
-textarea {
-  background-color: #eee;
-  border-radius: 0 4px 4px 0;
-}
-textarea {
-  border-radius: 4px 0 0 4px;
-  border-right: 10px solid #dbdbdb;
-}
-
 .remove {
   top: -15px;
   position: relative;
@@ -238,5 +235,21 @@ textarea {
   margin-right: -10px;
   padding: 16px 20px 16px 16px;
   background-position: calc(100% - 10px) calc(1em + 8px),calc(100% - 4px) calc(1em + 8px),calc(100% - 2.5em) .5em !important;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  margin: 15px;
+}
+.router-link-active {
+  font-weight: 600;
+  text-decoration: none;
 }
 </style>

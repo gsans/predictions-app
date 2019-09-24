@@ -1,0 +1,13 @@
+{
+    "resourceName": "transcriptiond4242699",
+    "convertPolicyName": "transcriptionPolicyd4242699",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "convertType": "transcription",
+    "language": "en-GB",
+    "access": "authAndGuest"
+}
