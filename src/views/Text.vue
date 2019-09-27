@@ -251,10 +251,10 @@ export default {
       }
     },
     onSpeechChange() {
-      let selectedSpeech = this.form.speechLanguage;
+      let selectedSpeech = this.form.selectedSpeech;
       if (selectedSpeech) {
         this.voicesList = selectedSpeech.voices;
-        //this.createForm.get('voice').patchValue(selectedSpeech.voices[0]);
+        this.form.selectedVoice = selectedSpeech.voices[0];
       }
     },
     onSpeedChange() {
